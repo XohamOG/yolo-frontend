@@ -15,6 +15,14 @@ function App() {
 
     try {
       const response = await axios.post("http://127.0.0.1:8000/api/detect/", formData);
+
+
+      print("hiii");
+
+
+
+
+
       setResults(response.data.detections);
     } catch (error) {
       console.error("Error detecting objects:", error);
